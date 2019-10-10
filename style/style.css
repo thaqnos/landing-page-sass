@@ -1,4 +1,47 @@
 html {
-  background-color: yellowgreen; }
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
+
+.navegacao {
+  background-color: white;
+  box-shadow: 3px 1px 4px 1px #b3b3b3;
+  -webkit-display: flex;
+  -ms-display: flex;
+  -moz-display: flex;
+  -o-display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 90px;
+  padding: 0 50px; }
+  .navegacao .logo {
+    width: 125px; }
+
+.menu {
+  -webkit-display: flex;
+  -ms-display: flex;
+  -moz-display: flex;
+  -o-display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .menu li {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 18px; }
+  .menu .botao {
+    background-color: #795db8;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 15px; }
 
 /*# sourceMappingURL=style.css.map */
