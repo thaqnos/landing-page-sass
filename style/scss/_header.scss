@@ -1,0 +1,23 @@
+.cabecalho {
+    @include display-flex(row, center, space-between);
+
+    .texto {
+        width: 50%;
+
+        .titulo {
+            font-weight: normal;
+        }
+
+        .botao--rosa {
+            @include buttons($default_pink);
+        }
+
+        .botao--transparente {
+            border: none;
+            background-color: transparent;
+            color: grey;
+            font-size: 16px;
+        }
+    }   
+
+}

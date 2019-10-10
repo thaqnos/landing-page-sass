@@ -1,25 +1,23 @@
 .navegacao {
     background-color: white;
     box-shadow: 3px 1px 4px 1px rgba(179,179,179,1);
-    @include display-flex(row, center, space-evenly);
     height: 90px;
-    padding: 0 50px;
+    @include display-flex(row, center, space-evenly);
 
     .logo {
-        width: 125px;
+        width: 10%;
     }
-}
 
-.menu {
-    @include display-flex(row, center, space-between);
+    .menu {
+        @include display-flex(row, center, space-between);
+        
+        li {
+            list-style: none;
+            margin-right: 18px;
+        }
     
-    li {
-        text-decoration: none;
-        list-style: none;
-        margin-right: 18px;
-    }
-
-    .botao {
-        @include buttons(#795db8);
+        .botao {
+            @include buttons($default-purple);
+        }
     }
 }
