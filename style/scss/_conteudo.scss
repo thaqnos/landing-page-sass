@@ -1,0 +1,41 @@
+.conteudo {
+    text-align: center;
+    padding: 30px;
+
+    .titulo--menor {
+        color: grey;
+        font-size: 25px;
+        font-weight: normal;
+    }
+
+    .depoimentos {
+        width: 100%;
+        padding: 20px 0 20px 0;
+        @include display-flex(row, center, center);
+
+        .universidade {
+            font-size: 22px;
+            margin: 0 0 0 -10px;
+            padding: 0;
+        }
+
+        .frase {
+            text-align: left;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        .nome {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            @extend %text-left;
+            font-size: 15px;
+        }
+
+        .cargo {
+            font-size: 15px;
+            @extend %text-left;           
+
+        }
+    }
+}
